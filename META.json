@@ -1,0 +1,82 @@
+{
+    "name": "CPAN-Testers-WWW-Prefs",
+    "version": "0.14",
+    "abstract": "The CPAN Testers Preferences website",
+    "author": [
+        "Barbie (BARBIE) <barbie@cpan.org>"
+    ],
+
+    "license": "artistic_2",
+    "dynamic_config" : 0,
+    "release_status" : "stable",
+    "meta-spec": {
+        "version": "2",
+        "url": "http://search.cpan.org/dist/CPAN-Meta/lib/CPAN/Meta/Spec.pm"
+    },
+    "generated_by": "Hand 1.0",
+    "keywords" : [
+        "qa",
+        "cpan",
+        "testing"
+    ],
+
+    "prereqs" : {
+        "runtime" : {
+            "requires" : {
+                "perl": "5.006",
+                "Labyrinth": "5.20",
+                "Labyrinth::DIUtils::ImageMagick": "5.04",
+                "Labyrinth::Plugin::Core": "5.14",
+                "Class::Accessor::Fast": "0",
+                "Data::Dumper": "0",
+                "Digest::SHA": "0",
+                "Email::Address": "0",
+                "MIME::Base64": "0",
+                "Net::SSLeay": "0",
+                "Sort::Versions": "0",
+                "Time::Local": "0"
+            }
+        },
+        "test" : {
+            "requires": {
+                "IO::File": "0",
+                "Test::More": "0.70"
+            },
+            "recommends": {
+                "Test::CPAN::Meta": "0",
+                "Test::CPAN::Meta::JSON": "0",
+                "Test::Pod": "1.00",
+                "Test::Pod::Coverage": "0.08"
+            }
+        }
+    },
+
+    "provides": {
+        "CPAN::Testers::WWW::Prefs": {
+            "file": "lib/CPAN/Testers/WWW/Prefs.pm",
+            "version": "0.14"
+        },
+        "Labyrinth::Plugin::CPAN": {
+            "file": "lib/Labyrinth/Plugin/CPAN.pm",
+            "version": "0.14"
+        },
+        "Labyrinth::Plugin::CPAN::Preferences": {
+            "file": "lib/Labyrinth/Plugin/CPAN/Preferences.pm",
+            "version": "0.14"
+        }
+    },
+    "no_index": {
+        "directory": ["t","examples","vhost"]
+    },
+
+    "resources": {
+        "license": "http://www.perlfoundation.org/artistic_license_2_0",
+        "homepage": "https://prefs.cpantesters.org",
+        "bugtracker": { "web": "http://rt.cpan.org/Public/Dist/Display.html?Name=CPAN-Testers-WWW-Prefs" },
+        "repository": {
+            "url": "git://github.com/barbie/cpan-testers-www-prefs.git",
+            "web": "http://github.com/barbie/cpan-testers-www-prefs",
+            "type": "git"
+        }
+    }
+}
